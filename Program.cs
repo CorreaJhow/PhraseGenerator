@@ -1,25 +1,40 @@
+using Microsoft.OpenApi.Models;
+using PhraseGeneratorDomain.Domain;
+using PhraseGeneratorDomain.Interfaces;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
+// Adiciona os serviços ao contêiner
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+
+// Configuração detalhada do Swagger
+builder.Services.AddSwaggerGen(options =>
+{
+    options.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Version = "v1",
+        Title = "Demotivational Phrases API",
+        Description = "API to generate/search random demotivational phrases",
+        Contact = new OpenApiContact
+        {
+            Name = "Jhow",
+            Email = "jhonatasrcorrea@gmail.com",
+            Url = new Uri("https://github.com/CorreaJhow")
+        }
+    })
+});
+
+builder.Services.AddScoped<ISearchPhraseRandomDemotivational, SearchPhraseRandomDemotivational>();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configura o pipeline HTTP
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(options =>
+    {
+        options.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
+    });
 }
-
-app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
-app.MapControllers();
-
-app.Run();
