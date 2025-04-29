@@ -22,7 +22,7 @@ builder.Services.AddSwaggerGen(options =>
             Email = "jhonatasrcorrea@gmail.com",
             Url = new Uri("https://github.com/CorreaJhow")
         }
-    })
+    });
 });
 
 builder.Services.AddScoped<ISearchPhraseRandomDemotivational, SearchPhraseRandomDemotivational>();

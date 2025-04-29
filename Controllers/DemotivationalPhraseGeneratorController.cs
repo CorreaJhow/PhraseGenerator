@@ -1,10 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using PhraseGeneratorDomain.Interfaces;
 
 namespace PhraseGenerator.Controllers
 {
     [ApiController]
     [Route("/v1/")]
-    public class DemotivationalPhraseGeneratorController
+    public class DemotivationalPhraseGeneratorController : Controller
     {
         private readonly ISearchPhraseRandomDemotivational _searchPhraseRandomDemotivational;
         public DemotivationalPhraseGeneratorController(ISearchPhraseRandomDemotivational searchPhraseRandomDemotivational) 
@@ -15,13 +16,17 @@ namespace PhraseGenerator.Controllers
         [HttpGet("Random/DemotivationalPhrase")]
         public async Task<IActionResult> GetPhrase()
         {
-            return await Ok("esta funcionando");
+            var randomPhrase = await _searchPhraseRandomDemotivational.GenerateRandomPhraseDemotivational();
+            if(randomPhrase == null)
+                return NotFound("failure, sentence not generated");
+
+            return Ok(randomPhrase);
         }
 
         [HttpGet("SpecificTheme/DemotivationalPhrase")]
         public async Task<IActionResult> GetSpecificThemePhrase([FromQuery] string theme)
         {
-            return await Ok("esta funcionando");
+            return Ok($"The phrase will return here, when it works, with the theme: {theme}");
         }
     }
 }
