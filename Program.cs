@@ -29,7 +29,10 @@ builder.Services.AddScoped<ISearchPhraseRandomDemotivational, SearchPhraseRandom
 
 var app = builder.Build();
 
-// Configura o pipeline HTTP
+app.UseRouting();
+app.UseAuthorization();
+
+// development middlewares 
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -37,4 +40,16 @@ if (app.Environment.IsDevelopment())
     {
         options.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
     });
+}
+
+app.MapControllers();
+
+try
+{
+    app.Run();
+}
+catch (Exception ex)
+{
+    Console.WriteLine($"Critical initialization failure: {ex}");
+    throw;
 }

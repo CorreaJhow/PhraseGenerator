@@ -5,7 +5,7 @@ namespace PhraseGenerator.Controllers
 {
     [ApiController]
     [Route("/v1/")]
-    public class DemotivationalPhraseGeneratorController : Controller
+    public class DemotivationalPhraseGeneratorController : ControllerBase
     {
         private readonly ISearchPhraseRandomDemotivational _searchPhraseRandomDemotivational;
         public DemotivationalPhraseGeneratorController(ISearchPhraseRandomDemotivational searchPhraseRandomDemotivational) 
