@@ -4,11 +4,11 @@ using PhraseGeneratorDomain.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Adiciona os serviços ao contêiner
+// Add services to the container
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
-// Configuração detalhada do Swagger
+// Detailed Swagger Configuration
 builder.Services.AddSwaggerGen(options =>
 {
     options.SwaggerDoc("v1", new OpenApiInfo
@@ -32,7 +32,7 @@ var app = builder.Build();
 app.UseRouting();
 app.UseAuthorization();
 
-// development middlewares 
+// Development middlewares 
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

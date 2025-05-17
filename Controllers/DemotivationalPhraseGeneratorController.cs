@@ -13,6 +13,10 @@ namespace PhraseGenerator.Controllers
             _searchPhraseRandomDemotivational = searchPhraseRandomDemotivational;
         }
 
+        /// <summary>
+        /// Gera frase desmotivacional aleatoria
+        /// </summary>
+        /// <returns></returns>
         [HttpGet("Random/DemotivationalPhrase")]
         public async Task<IActionResult> GetPhrase()
         {
@@ -22,7 +26,12 @@ namespace PhraseGenerator.Controllers
 
             return Ok(randomPhrase);
         }
-
+        s
+        /// <summary>
+        /// Busca frase desmotivacional com tema especifico
+        /// </summary>
+        /// <param name="theme"></param>
+        /// <returns></returns>
         [HttpGet("SpecificTheme/DemotivationalPhrase")]
         public async Task<IActionResult> GetSpecificThemePhrase([FromQuery] string theme)
         {
