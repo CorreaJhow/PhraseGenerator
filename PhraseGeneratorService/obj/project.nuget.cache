@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JJ3w8h1/4Ww=",
+  "dgSpecHash": "sGPEZ1kZc3w=",
   "success": true,
-  "projectFilePath": "C:\\Users\\jhona\\source\\repos\\PhraseGeneratorService\\PhraseGeneratorDomain.csproj",
+  "projectFilePath": "C:\\Users\\jhona\\source\\repos\\PhraseGeneratorRepo\\PhraseGeneratorService\\PhraseGeneratorDomain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

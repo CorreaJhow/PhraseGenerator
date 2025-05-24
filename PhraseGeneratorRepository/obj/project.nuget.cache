@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "eVXQKAIAQks=",
+  "dgSpecHash": "y2uTzy5UYfA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\jhona\\source\\repos\\PhraseGeneratorRepository\\PhraseGeneratorRepository.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\jhona\\source\\repos\\PhraseGeneratorRepo\\PhraseGeneratorRepository\\PhraseGeneratorRepository.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jhona\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

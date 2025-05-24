@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PhraseGeneratorDomain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ac46526ed525963984d021960370a86930f9da0")]
 [assembly: System.Reflection.AssemblyProductAttribute("PhraseGeneratorDomain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PhraseGeneratorDomain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

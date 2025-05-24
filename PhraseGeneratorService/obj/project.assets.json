@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jhona\\source\\repos\\PhraseGeneratorService\\PhraseGeneratorDomain.csproj",
+      "projectUniqueName": "C:\\Users\\jhona\\source\\repos\\PhraseGeneratorRepo\\PhraseGeneratorService\\PhraseGeneratorDomain.csproj",
       "projectName": "PhraseGeneratorDomain",
-      "projectPath": "C:\\Users\\jhona\\source\\repos\\PhraseGeneratorService\\PhraseGeneratorDomain.csproj",
+      "projectPath": "C:\\Users\\jhona\\source\\repos\\PhraseGeneratorRepo\\PhraseGeneratorService\\PhraseGeneratorDomain.csproj",
       "packagesPath": "C:\\Users\\jhona\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jhona\\source\\repos\\PhraseGeneratorService\\obj\\",
+      "outputPath": "C:\\Users\\jhona\\source\\repos\\PhraseGeneratorRepo\\PhraseGeneratorService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

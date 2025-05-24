@@ -1,11 +1,74 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "Newtonsoft.Json/13.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "PhraseGeneratorDomain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/PhraseGeneratorDomain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PhraseGeneratorDomain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Newtonsoft.Json/13.0.3": {
+      "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "PhraseGeneratorDomain/1.0.0": {
+      "type": "project",
+      "path": "../PhraseGeneratorService/PhraseGeneratorDomain.csproj",
+      "msbuildProject": "../PhraseGeneratorService/PhraseGeneratorDomain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "Newtonsoft.Json >= 13.0.3",
+      "PhraseGeneratorDomain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\jhona\\.nuget\\packages\\": {},
@@ -14,11 +77,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jhona\\source\\repos\\PhraseGeneratorRepository\\PhraseGeneratorRepository.csproj",
+      "projectUniqueName": "C:\\Users\\jhona\\source\\repos\\PhraseGeneratorRepo\\PhraseGeneratorRepository\\PhraseGeneratorRepository.csproj",
       "projectName": "PhraseGeneratorRepository",
-      "projectPath": "C:\\Users\\jhona\\source\\repos\\PhraseGeneratorRepository\\PhraseGeneratorRepository.csproj",
+      "projectPath": "C:\\Users\\jhona\\source\\repos\\PhraseGeneratorRepo\\PhraseGeneratorRepository\\PhraseGeneratorRepository.csproj",
       "packagesPath": "C:\\Users\\jhona\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jhona\\source\\repos\\PhraseGeneratorRepository\\obj\\",
+      "outputPath": "C:\\Users\\jhona\\source\\repos\\PhraseGeneratorRepo\\PhraseGeneratorRepository\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -39,7 +102,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\jhona\\source\\repos\\PhraseGeneratorRepo\\PhraseGeneratorService\\PhraseGeneratorDomain.csproj": {
+              "projectPath": "C:\\Users\\jhona\\source\\repos\\PhraseGeneratorRepo\\PhraseGeneratorService\\PhraseGeneratorDomain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -57,6 +124,12 @@
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
+        "dependencies": {
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.3, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

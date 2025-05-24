@@ -18,7 +18,8 @@ namespace PhraseGeneratorDomain.Domain
 
             var randomPhrase = await _generatePhraseRepository.GetRandomQuoteAsync();
 
-            if(randomPhrase ) //criar retorno. 
+            //if(randomPhrase) //criar retorno. 
+            return "teste";
         }
     }
 }

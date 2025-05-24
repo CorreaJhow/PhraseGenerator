@@ -9,3 +9,14 @@ C:\Users\jhona\source\repos\PhraseGeneratorService\obj\Debug\net8.0\PhraseGenera
 C:\Users\jhona\source\repos\PhraseGeneratorService\obj\Debug\net8.0\refint\PhraseGeneratorDomain.dll
 C:\Users\jhona\source\repos\PhraseGeneratorService\obj\Debug\net8.0\PhraseGeneratorDomain.pdb
 C:\Users\jhona\source\repos\PhraseGeneratorService\obj\Debug\net8.0\ref\PhraseGeneratorDomain.dll
+C:\Users\jhona\source\repos\PhraseGeneratorRepo\PhraseGeneratorService\bin\Debug\net8.0\PhraseGeneratorDomain.deps.json
+C:\Users\jhona\source\repos\PhraseGeneratorRepo\PhraseGeneratorService\bin\Debug\net8.0\PhraseGeneratorDomain.dll
+C:\Users\jhona\source\repos\PhraseGeneratorRepo\PhraseGeneratorService\bin\Debug\net8.0\PhraseGeneratorDomain.pdb
+C:\Users\jhona\source\repos\PhraseGeneratorRepo\PhraseGeneratorService\obj\Debug\net8.0\PhraseGeneratorDomain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jhona\source\repos\PhraseGeneratorRepo\PhraseGeneratorService\obj\Debug\net8.0\PhraseGeneratorDomain.AssemblyInfoInputs.cache
+C:\Users\jhona\source\repos\PhraseGeneratorRepo\PhraseGeneratorService\obj\Debug\net8.0\PhraseGeneratorDomain.AssemblyInfo.cs
+C:\Users\jhona\source\repos\PhraseGeneratorRepo\PhraseGeneratorService\obj\Debug\net8.0\PhraseGeneratorDomain.csproj.CoreCompileInputs.cache
+C:\Users\jhona\source\repos\PhraseGeneratorRepo\PhraseGeneratorService\obj\Debug\net8.0\PhraseGeneratorDomain.dll
+C:\Users\jhona\source\repos\PhraseGeneratorRepo\PhraseGeneratorService\obj\Debug\net8.0\refint\PhraseGeneratorDomain.dll
+C:\Users\jhona\source\repos\PhraseGeneratorRepo\PhraseGeneratorService\obj\Debug\net8.0\PhraseGeneratorDomain.pdb
+C:\Users\jhona\source\repos\PhraseGeneratorRepo\PhraseGeneratorService\obj\Debug\net8.0\ref\PhraseGeneratorDomain.dll
