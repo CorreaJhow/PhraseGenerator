@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "PhraseGeneratorDomain/1.0.0": {
+        "runtime": {
+          "PhraseGeneratorDomain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PhraseGeneratorDomain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
